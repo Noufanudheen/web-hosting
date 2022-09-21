@@ -1,0 +1,117 @@
+body{
+    margin: 0px;
+
+}
+.head{
+    height: 80px;
+    background-color: #fff1cb;
+    float: auto;
+}
+.body{
+    background-color: rgba(255, 251, 232, 0.747);
+    width: auto;
+    height: 600px;
+    float: auto;
+}
+.foot{
+    float: auto;
+    height: 300px;
+    width: auto;
+    background: rgb(255, 195, 65);
+    border: ridge;
+    border-color: black;
+}
+.h-logo-img{
+    box-align: left;
+    margin: 40px;
+    
+}
+.h-logo{
+    height: 80px;
+    width: 4%;
+    float: left;
+    margin-left: 1%;
+    margin: auto
+}
+.logo-img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.h-text{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: auto;
+    float: left;
+    width: 14%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: calc( 20px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    color: red;
+    text-decoration: none;
+}
+.quick-links{
+    float: left;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 81%;
+    height: 80px;
+    align-items: baseline;
+    align-content:center;
+
+}
+.Login{
+    margin-top: auto;
+    margin-right: 1%;
+    background-color: #fff1cb;
+    border: none;
+
+
+}
+.About{
+    margin-top: auto;
+    margin-right: 0%;    
+}
+.Blog{
+    margin-top: auto;
+    margin-right: 0%;
+}
+.LoginB{
+    background-color: #fff1cb;
+    border: none;
+    color: Red;
+    font-weight: bold;
+    height: 30px;
+    width: 70px;
+    
+}
+.LoginB:hover {
+    background-color: #b1a585;
+    color: white;
+    box-shadow: 1px 3px 3px black;
+}
+.BlogB{
+    background-color: #fff1cb;
+    border: none;
+    color: Red;
+    font-weight: bold;
+    height: 30px;
+    width: 70px;
+
+}
+.BlogB:hover{background-color: #b1a585;     color: white;
+    box-shadow: 1px 3px 3px black;
+}
+.AboutB{
+    background-color: #fff1cb;
+    border: none;
+    color: Red;
+    font-weight: bold;
+    height: 30px;
+    width: 70px;
+
+}
+.AboutB:hover{background-color: #b1a585;     color: white;
+    box-shadow: 1px 3px 3px black;
+}
