@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In</title>
+</head>
+<body>
+    <h1>Log In</h1>
+    <form action="login.php" method="post">
+        <input type="hidden" name="csrf_token" value="<?php echo $csrf_token; ?>">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" name="submit" value="Log In">
+    </form>
+        <?php
+    // Check if login failed
+    if (isset($_POST['submit'])) {
+        if (isset($_SESSION['last_login_attempt']) && time() - $_SESSION['last_login_attempt'] < 30) {
+            echo 'Too many login attempts. Please try again later.';
+        }
+        else if (!isset($_SESSION['username'])){
+            echo 'Invalid login credentials.';
+        }
+    }
+    ?>
+</body>
+</html>
